@@ -1,5 +1,19 @@
 <p>about works!</p>
 <div class="container">
-    <button (click)="showAlert()" type="button" class="btn btn-success">success</button>
+    <table class="table">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Email</th>
+          </tr>
+          <tr *ngFor="let student of students">
+           <td>{{student.id}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.address}}</td>
+            <td>{{student.email}}</td>
+        
+          </tr>  
+      </table>
 </div>
 
