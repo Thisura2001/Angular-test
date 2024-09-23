@@ -9,4 +9,8 @@ import { FormControl } from '@angular/forms';
 export class ProfileComponent {
   name = new FormControl('');
   email = new FormControl('');
+
+  saveData(){
+    alert(this.name.value)
+  }
 }
